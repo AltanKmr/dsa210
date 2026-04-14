@@ -41,12 +41,13 @@ The Fixed-Effects Regression Model yielded an R-squared value of 0.447, with sev
 * `/Data_Cleaning.ipynb` - Script for data ingestion, preprocessing, and merging.
 * `/Visualization_and_Analysis.ipynb` - Script containing the EDA and formal statistical testing.
 * `/final_dataset.csv` - The cleaned and merged panel dataset used for final modeling.
+* `/requirements.txt` - List of Python dependencies required to run the notebooks.
 
 ## Future Work
 Following the formal statistical testing, future iterations of this project plan to incorporate Machine Learning methodologies. Algorithms such as Random Forest and XGBoost will be applied to predict GDP growth resilience, utilizing SHAP (SHapley Additive exPlanations) values to extract deeper insights into feature importance and non-linear interactions.
 
 ## How to Run
-1. Clone this repository to your local machine or Google Colab environment.
-2. Ensure you have the required Python dependencies installed: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scipy`, `statsmodels`.
-3. Execute `Data_Cleaning.ipynb` to process the raw data and output `final_dataset.csv`.
-4. Execute `Visualization_and_Analysis.ipynb` to reproduce the descriptive statistics, visualizations, and regression models.
+1. Clone this repository to your local machine or workspace.
+2. Install the necessary Python dependencies by running the following command in your terminal:
+   ```bash
+   pip install -r requirements.txt
