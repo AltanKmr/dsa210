@@ -32,7 +32,7 @@ focusing strictly on net oil-importing countries. The final dataset consists of
   annual averages to calculate year-on-year percentage changes, representing
   the global oil price shock variable.
 - **World Bank Open Data:** Provided energy import dependency metrics, measuring
-  the percentage of energy consumption sourced from foreign imports.
+  the percentage of energy consumption sourced from foreign imports
 
 ## Repository Structure
 
@@ -49,7 +49,7 @@ focusing strictly on net oil-importing countries. The final dataset consists of
 
 The analytical workflow is divided into three Jupyter Notebooks:
 
-### 1. Data Collection and Cleaning (`Data_Cleaning.ipynb`)
+### 1. Data Collection and Cleaning (`dsa210.ipynb`)
 
 - Transformed World Bank data from wide to long format.
 - Engineered new features, including annualized oil price percentage changes
@@ -57,9 +57,6 @@ The analytical workflow is divided into three Jupyter Notebooks:
 - Merged multi-source datasets using `country` and `year` as primary keys.
 - Filtered the dataset strictly for net energy importers to ensure the validity
   of the research scope.
-
-### 2. Visualization and Statistical Analysis (`Visualization_and_Analysis.ipynb`)
-
 - **Exploratory Data Analysis (EDA):** Analyzed variable distributions,
   correlation matrices, and group-wise comparative statistics.
 - **Hypothesis Testing:** Conducted Pearson and Spearman rank-order correlation
@@ -70,7 +67,7 @@ The analytical workflow is divided into three Jupyter Notebooks:
   (`oil_price_change × renewable_share`) was introduced to explicitly test the
   buffering hypothesis. This model achieved an **R² of 0.447**.
 
-### 3. Machine Learning Methods (`ML_Methods.ipynb`)
+### 2. Machine Learning Methods (`ml_methods.ipynb`)
 
 Four machine learning algorithms were applied to extend the statistical findings
 into a predictive framework:
